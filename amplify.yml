@@ -10,9 +10,9 @@ frontend:
     build:
       commands:
         - ./dotnet8/dotnet publish -c Release -o release
-    artifacts:
-      baseDirectory: /release/wwwroot
-      files:
-        - "**/*"
-    cache:
-      paths: []
+  artifacts:
+    baseDirectory: /release/wwwroot
+    files:
+      - "**/*"
+  cache:
+    paths: []
